@@ -2,9 +2,15 @@ body {
   margin: 0;
 }
 nav {
-  background-color: black;
-  padding: 5px 0;
+  background-color: rgb(0, 0, 0);
   text-align: center;
+  /* A menü fix magasságának beállítása */
+  height: 60px;
+  /* flex display, a könnyebb kezelhetőségért, irány és vertikális középre igazítás*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* A menü a helyén marad */
   position: fixed;
   top: 0;
   width: 100%;
