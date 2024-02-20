@@ -7,7 +7,8 @@ body {
   padding-top: 60px;
 }
 
-#menuCheckBox {
+#menuCheckBox,
+#menuLabel {
   display: none;
 }
 nav {
@@ -52,11 +53,24 @@ nav a:hover {
   nav {
     flex-direction: column;
     height: auto;
-    bottom: 0;
+    bottom: 40px;
     top: auto;
   }
   body {
     padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  #menuLabel {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
