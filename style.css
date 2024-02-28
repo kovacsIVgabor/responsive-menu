@@ -55,7 +55,7 @@ nav a:hover {
     height: auto;
     bottom: var(--bottom-menu-bottom);
     top: auto;
-    transition: bottom 1s ease;
+    transition: bottom 0.3s ease;
   }
   body {
     padding-top: 0px;
