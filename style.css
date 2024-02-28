@@ -1,10 +1,11 @@
 :root {
   --menu-display: flex;
+  --top-menu-height: 60px;
+  --bottom-menu-button-height: 40px;
 }
 
-body {
-  margin: 0;
-  padding-top: 60px;
+html {
+  padding-top: var(--top-menu-height);
 }
 
 #menuCheckBox,
@@ -15,7 +16,7 @@ nav {
   background-color: rgb(0, 0, 0);
   text-align: center;
   /* A menü fix magasságának beállítása */
-  height: 60px;
+  height: var(--top-menu-height);
   /* flex display, a könnyebb kezelhetőségért, irány és vertikális középre igazítás*/
   display: var(--menu-display);
   align-items: center;
@@ -23,6 +24,7 @@ nav {
   /* A menü a helyén marad */
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -57,19 +59,20 @@ nav a:hover {
     top: auto;
     transition: bottom 0.3s ease;
   }
-  body {
+  html {
     padding-top: 0px;
-    padding-bottom: 40px;
+    padding-bottom: var(--bottom-menu-button-height);
   }
   #menuLabel {
     position: fixed;
     bottom: 0;
+    left: 0;
     display: flex;
     width: 100%;
     background-color: #000;
     color: #fff;
     font-size: 30px;
-    height: 40px;
+    height: var(--bottom-menu-button-height);
     align-items: center;
     justify-content: center;
   }
