@@ -45,7 +45,7 @@ nav a:hover {
 
 @media screen and (max-width: 600px) {
   :root {
-    --menu-display: none;
+    --bottom-menu-bottom: -45px;
   }
   nav a {
     font-size: 22px;
@@ -53,7 +53,7 @@ nav a:hover {
   nav {
     flex-direction: column;
     height: auto;
-    bottom: 40px;
+    bottom: var(--bottom-menu-bottom);
     top: auto;
   }
   body {
@@ -75,5 +75,5 @@ nav a:hover {
 }
 
 body:has(#menuCheckBox:checked) {
-  --menu-display: flex;
+  --bottom-menu-bottom: 40px;
 }
