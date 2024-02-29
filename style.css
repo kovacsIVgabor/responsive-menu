@@ -1,5 +1,4 @@
 :root {
-  --menu-display: flex;
 }
 
 body {
@@ -17,7 +16,7 @@ nav {
   /* A menü fix magasságának beállítása */
   height: 60px;
   /* flex display, a könnyebb kezelhetőségért, irány és vertikális középre igazítás*/
-  display: var(--menu-display);
+  display: flex;
   align-items: center;
   justify-content: center;
   /* A menü a helyén marad */
@@ -45,7 +44,7 @@ nav a:hover {
 
 @media screen and (max-width: 600px) {
   :root {
-    --menu-display: none;
+    --bottom-menu-bottom: 40px;
   }
   nav a {
     font-size: 22px;
@@ -53,8 +52,9 @@ nav a:hover {
   nav {
     flex-direction: column;
     height: auto;
-    bottom: 40px;
+    bottom: var(--bottom-menu-bottom);
     top: auto;
+    transition: bottom 0.5s ease;
   }
   body {
     padding-top: 0px;
@@ -75,5 +75,5 @@ nav a:hover {
 }
 
 body:has(#menuCheckBox:checked) {
-  --menu-display: flex;
+  --bottom-menu-bottom: -40px;
 }
