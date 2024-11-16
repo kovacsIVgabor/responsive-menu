@@ -81,3 +81,9 @@ nav a:hover {
 body:has(#menuCheckBox:checked) {
   --bottom-menu-bottom: 40px;
 }
+
+xx {
+  border: 1px solid green;
+  width:300px;
+  height: 300px;
+}
